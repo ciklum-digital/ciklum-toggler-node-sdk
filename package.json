@@ -43,6 +43,11 @@
     "tslint-origin-ordered-imports-rule": "1.2.2",
     "tslint-sonarts": "1.9.0"
   },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
   "bugs": {
     "url": "https://github.com/ciklum-digital/ciklum-toggler-node-sdk/issues"
   }
