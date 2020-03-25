@@ -4,7 +4,7 @@
     "packages/*"
   ],
   "changelog": {
-    "repo": "ciklum-digital/ct-node-sdk",
+    "repo": "ciklum-digital/ciklum-toggler-node-sdk",
     "cacheDir": ".changelog",
     "labels": {
       "PR: Test :ring:": ":ring: Test",
