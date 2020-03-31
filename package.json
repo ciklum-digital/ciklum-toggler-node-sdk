@@ -3,7 +3,7 @@
   "description": "Ciklum toggler Server-side SDK for Nodejs",
   "version": "0.1.0",
   "author": "Ciklum Digital",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "private": true,
   "workspaces": [
     "packages/*"
@@ -17,7 +17,7 @@
     "test": "npx jest",
     "build": "npx lerna run build",
     "ci:lint": "yarn lint",
-    "ci:test": "yarn test | npx coveralls",
+    "ci:test": "yarn test",
     "ci:sonar": "npx sonar-scanner",
     "ci:build": "yarn build",
     "ci:publish": "npx lerna publish"
