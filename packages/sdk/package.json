@@ -1,6 +1,6 @@
 {
   "name": "@ciklum-toggler/node-sdk",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Ciklum toggler Server-side SDK for Nodejs",
   "author": "Ciklum",
   "homepage": "",
