@@ -1,5 +1,5 @@
 {
-  "name": "node-sdk",
+  "name": "@ciklum-toggler/node-sdk",
   "version": "0.1.4",
   "description": "Ciklum toggler Server-side SDK for Nodejs",
   "author": "Ciklum",
@@ -22,5 +22,5 @@
     "registry": "https://registry.npmjs.org/",
     "tag": "latest"
   },
-  "gitHead": "#"
+  "gitHead": "b5f84cab634ff03349ea3c61e6205bef633e797e"
 }
