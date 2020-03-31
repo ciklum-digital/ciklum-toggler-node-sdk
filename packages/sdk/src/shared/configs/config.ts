@@ -25,7 +25,7 @@ class Config {
 
   }
 
-  public init({ toggleUrl, envKey, cachePeriod, ssl = false }: IConfig) {
+  public init({ toggleUrl, envKey, cachePeriod = 0, ssl = false }: IConfig) {
     this.toggleUrl = toggleUrl;
     this.envKey = envKey;
     this.cachePeriod = cachePeriod;

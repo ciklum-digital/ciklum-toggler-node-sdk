@@ -14,7 +14,7 @@
     "dist"
   ],
   "scripts": {
-    "prebuild": "rm -r -f ./dist",
+    "prebuild": "rm -r -f ../../dist/node-sdk",
     "build": "tsc"
   },
   "publishConfig": {
