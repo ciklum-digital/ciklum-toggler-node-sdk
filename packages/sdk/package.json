@@ -8,13 +8,13 @@
   "main": "dist/public-api.js",
   "typings": "dist/public-api.d.ts",
   "directories": {
-    "dist": "dist"
+    "dist": "../../dist/node-sdk"
   },
   "files": [
-    "dist"
+    "../../dist/node-sdk"
   ],
   "scripts": {
-    "prebuild": "rm -r -f dist/node-sdk",
+    "prebuild": "rm -r -f ../../dist/node-sdk",
     "build": "tsc"
   },
   "publishConfig": {

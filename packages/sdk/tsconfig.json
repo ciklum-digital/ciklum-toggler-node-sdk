@@ -1,7 +1,7 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "outDir": "dist/node-sdk",
+    "outDir": "../../dist/node-sdk",
     "strictPropertyInitialization": false
   },
   "include": ["./src"]

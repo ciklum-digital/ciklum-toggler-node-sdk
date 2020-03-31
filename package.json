@@ -23,6 +23,8 @@
     "ci:publish": "npx lerna publish"
   },
   "dependencies": {
+    "@ciklum-toggler/angular-sdk": "^0.3.0",
+    "@ciklum-toggler/node-sdk": "^0.1.7",
     "typescript": "3.5.2"
   },
   "devDependencies": {
