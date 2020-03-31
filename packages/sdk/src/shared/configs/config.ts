@@ -32,5 +32,4 @@ class Config {
     this.ssl = ssl;
   }
 }
-
 export const config = new Config();
