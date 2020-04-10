@@ -1,69 +1,64 @@
-<p align="center">
-    <a href="https://ciklum-digital.github.io/ciklum-toggler-node-sdk/">
-        <img width="96" src="https://ciklum-digital.github.io/ciklum-toggler-node-sdk/assets/images/icon.svg" alt="module skeleton icon">
-    </a>    
-</p>
+# @ciklum-toggler/node-sdk
 
-<p align="center">Start your module here</h3>
+@ciklum-toggler/node-sdk is easy way to integrate your nodejs application with ciklum toggler feature flags provider 
 
-<p align="center">
-  <a href="https://www.npmjs.com/package/ciklum-toggler-node-sdk">
-    <img src="https://img.shields.io/npm/v/ciklum-toggler-node-sdk.svg?style=flat" alt="npm" />
-  </a>
-  <a href="https://travis-ci.com/ciklum-digital/ciklum-toggler-node-sdk">
-    <img src="https://img.shields.io/travis/ciklum-digital/ciklum-toggler-node-sdk/master.svg" alt="travis build" />
-  </a>
-  <a href='https://coveralls.io/github/ciklum-digital/ciklum-toggler-node-sdk?branch=master'>
-    <img src='https://coveralls.io/repos/github/ciklum-digital/ciklum-toggler-node-sdk/badge.svg?branch=master' alt="coverage" />
-  </a>
-</p>
+## Getting started
 
-<p align="center">
-  <a href="https://www.npmjs.com/package/ciklum-toggler-node-sdk">
-    <img src="https://img.shields.io/npm/l/ciklum-toggler-node-sdk.svg?style=flat" alt="license" />
-  </a>
-  <a href="https://conventionalcommits.org">
-    <img src="https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg?style=flat" alt="conventional commits" />
-  </a>
-  <a href="https://lerna.js.org/">
-    <img src="https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg?style=flat" alt="lerna" />
-  </a>
-</p>
-
-
-# Getting started
-
-
-ciklum-toggler-node-sdk is a easiest way to start your single/multi package module. Fully integrated flow with lerna, travis, conventional-commit etc. 
-
-Check out [github pages]() for documentation and details.
-
-## Overview
-
-[there the place for OVERVIEW dateils..]
-
-[please fill it for your module]
+* Run `npm i -S @ciklum-toggler/node-sdk` or `yarn add @ciklum-toggler/node-sdk` to install module as dependency
+* Import config from module to your index.js (root) 
+```
+import {
+     config
+   } from '@ciklum-toggler/node-sdk';
+```
+* Configure module settings
+    * add config initialisation in you root file
+    * add value for `toggleUrl` -  path to your instance of **Ciklum Toggler** and api endpoint mostly it's `/api/external-systems-access`
+    * add value for `envKey` - sdk token for your environment
+```
+config.init({
+        toggleUrl: '${path-to-your-instance}/api/external-systems-access',
+        envKey: 'unique-env-sdk-key',
+      });
+```
 
 ## Usage
+### Config options
+*Example*
 
-- As a first step clone this repo:
-```bash
-git clone https://github.com/ciklum-digital/ciklum-toggler-node-sdk.git
-``` 
+```
+config.init({
+        toggleUrl: '${path-to-your-instance}/api/external-systems-access',
+        envKey: 'unique-env-sdk-key',
+        cachePeriod: 1000, // - 1000ms 
+        ssl: true
+      });
+```
+* Parameter `cachePeriod` by default is disabled, if you add value in milliseconds it is automatically requested changes from **Ciklum Toggler**
+* Parameter `ssl` by default false, it uses when  your **Ciklum toggler** instance configure under https transport 
+### Service
+
+*Example*
+
+Import service where you are going to use it
+
+```
+import { featureToggle } from '@ciklum-toggler/node-sdk';
+
+```
+
+Usage service in your code
+
+```
+async function myMethod() {
+    const isFeatureEnabled = await featureToggle.isEnabled('FEATURE_NAME'); //-return promise 
+    const isFeatureDisabled = await featureToggle.isDisabled('FEATURE_NAME'); //-return promise 
+}
+
+```
 
 ## API
 
-[there the place for API dateils..]
-
-[please fill it for your module]   
-
-
-## Examples
-
-[there the place for EXAMPLES dateils..]    
-
-[please fill it for your module]   
-
-## Contacts
-
-Any questions?, conduct us directly via 
+* Service
+    * featureToggle.isEnabled - check if feature is enabled and return Promise<boolean>
+    * featureToggle.isDisabled - check if feature is disabled and return Promise<boolean>
