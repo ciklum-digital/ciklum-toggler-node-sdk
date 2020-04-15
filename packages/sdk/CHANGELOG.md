@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.14](https://github.com/ciklum-digital/ciklum-toggler-node-sdk/compare/v0.1.13...v0.1.14) (2020-04-15)
+
+**Note:** Version bump only for package @ciklum-toggler/node-sdk
+
+
+
+
+
 ## [0.1.13](https://github.com/ciklum-digital/ciklum-toggler-node-sdk/compare/v0.1.12...v0.1.13) (2020-04-10)
 
 **Note:** Version bump only for package @ciklum-toggler/node-sdk
