@@ -1,4 +1,12 @@
 # @ciklum-toggler/node-sdk
+<p align="center">
+  <a href="https://www.npmjs.com/package/@ciklum-toggler/node-sdk">
+    <img src="https://img.shields.io/npm/v/@ciklum-toggler/node-sdk.svg?style=flat" alt="npm" />
+  </a>
+  <a href="https://travis-ci.com/ciklum-digital/ciklum-toggler-node-sdk">
+    <img src="https://img.shields.io/travis/ciklum-digital/ciklum-toggler-node-sdk/master.svg" alt="travis build" />
+  </a>
+</p>
 
 @ciklum-toggler/node-sdk is easy way to integrate your nodejs application with ciklum toggler feature flags provider 
 
