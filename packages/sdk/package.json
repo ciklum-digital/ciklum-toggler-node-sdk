@@ -3,7 +3,7 @@
   "version": "0.1.12",
   "description": "Ciklum toggler Server-side SDK for Nodejs",
   "author": "Ciklum",
-  "homepage": " ",
+  "homepage": "https://github.com/ciklum-digital/ciklum-toggler-node-sdk#readme",
   "license": "Apache-2.0",
   "main": "dist/public-api.js",
   "typings": "dist/public-api.d.ts",
@@ -21,6 +21,10 @@
     "access": "public",
     "registry": "https://registry.npmjs.org/",
     "tag": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ciklum-digital/ciklum-toggler-node-sdk.git"
   },
   "gitHead": "b5f84cab634ff03349ea3c61e6205bef633e797e"
 }
