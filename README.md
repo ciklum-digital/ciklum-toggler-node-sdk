@@ -4,7 +4,7 @@
     <img src="https://img.shields.io/npm/v/@ciklum-toggler/node-sdk.svg?style=flat" alt="npm" />
   </a>
   <a href="https://travis-ci.com/ciklum-digital/ciklum-toggler-node-sdk">
-    <img src="https://img.shields.io/travis/ciklum-digital/ciklum-toggler-node-sdk/master.svg" alt="travis build" />
+    <img src="https://travis-ci.com/ciklum-digital/ciklum-toggler-node-sdk.svg?branch=master" alt="travis build" />
   </a>
 </p>
 

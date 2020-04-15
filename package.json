@@ -10,6 +10,12 @@
   ],
   "homepage": "https://github.com/ciklum-digital/ciklum-toggler-node-sdk#readme",
   "main": "lerna.json",
+  "keywords": [
+    "nodejs",
+    "@ciklum-toggler",
+    "feature-toggle",
+    "typescript"
+  ],
   "scripts": {
     "commit": "npx git-cz",
     "lint": "npx tslint packages/**/*.ts --project ./tsconfig.json",
